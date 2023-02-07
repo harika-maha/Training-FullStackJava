@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .details h1{
+        text-align: center;
+      }
+    .details {
+    width: 100%;
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 55px;
+    width: 75%;
+    height: 1000px;
+}
+      #header {
+        height: 40px;
+        width: 100%;
+        background-color: #ff9f9f;
+        position: fixed;
+        z-index: 1;
+      }
+
+      #title {
+        margin-left: 3%;
+      }
+
+      #footer {
+        height: 50px;
+        width: 100%;
+        background-color: #ff9f9f;
+        clear: both;
+        position: relative;
+      }
+      table, th, td {  
+    border: 1px solid black;  
+}  
+      .left {
+        height: 1000px;
+        width: 45px;
+        background-color: #3d9999;
+        float: left;
+        position: fixed;
+      }
+      img{
+        position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="leavesFullStack.jpeg">
+    <div id="header"></div>
+    <div class="left"></div>
+    <div class="details">
+      <br /><br />
+      <h1 >Resume</h1>
+      <h2>Harika Mahalakshmi S</h2>
+      <hr />
+      <br />
+      <b><p class="head">Background</p></b>
+      <p>
+        I hail from Chennai, TamilNadu. I am a tech enthusiast, looking forward</p>
+        <p>to learning trending technologies. I am passionate about image processing techniques,</p>
+        <p>Deep Learning, Artificial Intelligence and Full Stack Web Development</p>
+      </p>
+      <b><p class="head">Education</p></b>
+      <table>  
+        <tr><th>Course</th><th>Institution</th><th>Marks</th></tr>  
+        <tr><td>Bachelor of Engineering(CSE)</td><td>St. Joseph's College of Engineering</td><td>9.45CGPA</td></tr>  
+        <tr><td>12th(AISSCE)</td><td>Kendriya Vidyalaya Donimalai</td><td>95%</td></tr>  
+        <tr><td>10th</td><td>Kendriya Vidyalaya Donimalai</td><td>95%</td></tr>  
+        </table>
+      <b><p class="head">Technical Knowledge</p></b>
+      <ul>
+        <li>Programming Languages Known:</li>
+        <ul>
+          <li>JAVA</li>
+          <li>Python</li>
+          <li>C</li>
+        </ul>
+        <li>Version Control System: Git</li>
+        <li>Web Development: HTML, CSS, JavaScript</li>
+      </ul>
+      <b><p class="head">Interests/Hobbies</p></b>
+      <ul>
+        <li>Travelling</li>
+        <li>Origami & Crafts</li>
+        <li>Reading Books</li>
+        <li>Gardening</li>
+      </ul>
+    </div>
+    <div class="right"></div>
+    <div id="footer"></div>
+  </body>
+</html>
