@@ -57,7 +57,7 @@ body {
   animation-duration: 3.5s;
 }
 .balloon:nth-child(2):before {
-  color: hsl(245, 40%, 65%);
+  color: rgb(164, 164, 209);
 }
 
 .balloon:nth-child(3) {
