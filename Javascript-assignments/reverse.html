@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>String Reverse</title>
+  </head>
+  <body>
+    <input type="text" id="string" />
+    <button type="button" onclick="wordReverse()">Submit</button>
+    <p id="output"></p>
+    <script>
+      function wordReverse() {
+        string = document.getElementById("string").value;
+        console.log(string);
+        var words = string.split(" ");
+        var result = [];
+        for (var i = 0; i < words.length; i++) {
+          result.push(words[i].split("").reverse().join(""));
+        }
+
+        document.getElementById("output").innerHTML = result.join(" ");
+      }
+    </script>
+  </body>
+</html>
