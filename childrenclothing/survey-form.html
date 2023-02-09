@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      label,
+      ul {
+        margin-left: 20%;
+      }
+      input,
+      select {
+        padding: 10px;
+        display: block;
+        margin-left: 60%;
+      }
+      ul {
+        list-style: none;
+      }
+      .but {
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: dodgerblue;
+        width: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <p
+      style="
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: larger;
+        font-weight: 400;
+      "
+    >
+      <b> Leave a Feedback! </b>
+    </p>
+    <hr style="width: 60%" />
+    <label for="name">Enter your Name</label>
+    <input type="text" name="name" placeholder="Name" />
+    <label for="email">Enter Email</label>
+    <input type="email" name="email" placeholder="Email" />
+    <label for="age">Age</label>
+    <ul>
+      <li>
+        <label for="<16"><input type="radio" name="age" id="rad" /><16</label>
+      </li>
+      <li>
+        <label for="17-30"
+          ><input type="radio" name="age" id="rad" />17-30</label
+        >
+      </li>
+      <li>
+        <label for=">30"><input type="radio" name="age" id="rad" />>30</label>
+      </li>
+    </ul>
+
+    <label for="mostLiked">Which Collection Did you like the most?</label>
+    <ul>
+      <li>
+        <label for="girls">
+          <input type="checkbox" name="girls" id="check" /> Girls</label
+        >
+      </li>
+      <li>
+        <label for="boys"
+          ><input type="checkbox" name="boys" id="check" />Boys</label
+        >
+      </li>
+      <li>
+        <label for="access">
+          <input type="checkbox" name="accessories" id="check" />
+          Accessories</label
+        >
+      </li>
+    </ul>
+    <label for="color">Which color outfits did you like the most?</label>
+    <input type="color" name="color" />
+    <label for="rating">Rate Our Products</label>
+    <input type="range" name="rating" />
+    <label for="date">When was your Last Purchase Here?</label>
+    <input type="date" name="date" />
+    <label for="better">What Can We Do Better?</label>
+    <select name="more">
+      <option value="-1">Choose Any</option>
+      <option value="0">Everything's Perfect</option>
+      <option value="1">Better User Experience</option>
+      <option value="2">More Collection of Clothes</option>
+      <option value="3">Reduced Prices</option>
+    </select>
+    <input type="button" value="Submit" class="but" />
+  </body>
+</html>
