@@ -4,10 +4,17 @@
   </head>
   <body>
     <input type="text" id="name" />
-    <button type="button" onclick="validity()">Submit</button>
+    <button type="button" onclick="validate()">Submit</button>
     <script>
-      function validity() {
+      function validate() {
         let name = document.getElementById("name").value;
+        let nameArray = name.split(" ");
+        for (let i = 0; i < nameArray.length; i++) {
+          let text = nameArray[i];
+          let pattern = "^[A-Z](=?\.)|[A-Z][a-z]+";
+          let result = text.match(pattern);
+          console.log(result);
+        }
       }
     </script>
   </body>
