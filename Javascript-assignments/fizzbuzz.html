@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Fizzbuzz</title>
+  </head>
+  <body>
+    <p id="content"></p>
+    <script>
+      content = document.getElementById("content");
+      for (let i = 0; i < 100; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+          content.innerHTML += "FizzBuzz\n";
+        } else if (i % 3 == 0) {
+          content.innerHTML += "Fizz\n";
+        } else if (i % 5 == 0) {
+          content.innerHTML += "Buzz\n";
+        }
+      }
+    </script>
+  </body>
+</html>
