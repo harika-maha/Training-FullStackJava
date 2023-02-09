@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Anagrams</title>
+  </head>
+  <body>
+    <input type="text" id="string1" />
+    <input type="text" id="string2" />
+    <button type="button" onclick="anagram()">Submit</button>
+    <p id="output"></p>
+    <script>
+      function anagram() {
+        string1 = document.getElementById("string1").value;
+        string2 = document.getElementById("string2").value;
+        let arr1 = string1.split("");
+        let arr2 = string2.split("");
+        let flag = true;
+        if (string1.length == string2.length) {
+          for (let i = 0; i < string1.length; i++) {
+            if (arr2.includes(arr1[i])) flag = true;
+            else {
+              flag = false;
+              break;
+            }
+          }
+          document.getElementById("output").innerHTML = flag;
+        }
+      }
+    </script>
+  </body>
+</html>
