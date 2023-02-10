@@ -1,9 +1,11 @@
-body {
-  margin: 20px;
-  background: hsl(70, 31%, 85%);
+/* body {
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F357%2F888%2Foriginal%2Fabstract-vector-illustration-with-colorful-confetti-and-ribbon-on-dark-background.jpg&f=1&nofb=1&ipt=8111ebcbfdbe3c3b3c8c41078f40b9b13f34875bd511a94dad61e1c74ffa05c4&ipo=images);
+} */
+.birthday-card {
+  background: rgb(238, 238, 192);
+  margin: 15%;
   text-align: center;
 }
-
 .balloon {
   display: inline-block;
   width: 120px;
