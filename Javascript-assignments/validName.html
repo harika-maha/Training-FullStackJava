@@ -5,15 +5,29 @@
   <body>
     <input type="text" id="name" />
     <button type="button" onclick="validate()">Submit</button>
+    <br /><br />
+    <p id="op"></p>
     <script>
       function validate() {
         let name = document.getElementById("name").value;
         let nameArray = name.split(" ");
-        for (let i = 0; i < nameArray.length; i++) {
-          let text = nameArray[i];
-          let pattern = "^[A-Z](=?\.)|[A-Z][a-z]+";
-          let result = text.match(pattern);
-          console.log(result);
+        let flag = true;
+        if (nameArray.length > 1) {
+          for (let i = 0; i < nameArray.length; i++) {
+            let text = nameArray[i];
+            let pattern = /(^[A-Z](=?\.)|^[A-Z][a-z]+){1,}$/;
+            let result = pattern.test(text);
+            if (result == true) {
+              flag = true;
+            } else {
+              flag = false;
+              break;
+            }
+          }
+          document.getElementById("op").innerHTML += name + ":" + flag + "<br>";
+        } else {
+          document.getElementById("op").innerHTML +=
+            name + ":" + "false" + "<br>";
         }
       }
     </script>
