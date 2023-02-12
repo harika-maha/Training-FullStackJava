@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="input">Stack Values: </label>
+    <input type="text" id="input" />
+    <button onclick="enqueue()">Add</button>
+    <button onclick="dequeue()">Reverse</button>
+    <br />
+    <hr />
+    <br />
+    <p id="op"></p>
+  </body>
+  <script>
+    var stack1 = [];
+    var stack2 = [];
+    function enqueue() {
+      var input = document.getElementById("input");
+      if (input.value == "" || input.value == "null")
+        alert("The element cannot be empty or null");
+      else stack1.push(input.value);
+      input.value = "";
+    }
+    function dequeue() {
+      if (stack2.length === 0) {
+        if (stack1.length === 0) {
+          console.log("Queue Underflow");
+        }
+        while (stack1.length > 0) {
+          let x = stack1.pop();
+          stack2.push(x);
+        }
+      }
+
+      document.getElementById("op").innerHTML +=
+        "Dequeue Operation: " + stack2.pop() + "<br>";
+    }
+  </script>
+</html>
