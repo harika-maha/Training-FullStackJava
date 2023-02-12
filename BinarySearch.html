@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Search</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Demo - Binary Search</h1>
+    <hr style="width: 60%; margin-left: 0" />
+    <br />
+    <label for="inputs">Input Values: </label>
+    <input type="number" id="num" />
+    <button onclick="addvalues()">Add Values</button>
+    <br /><br />
+    <label for="show">Click to show values</label>
+    <button onclick="showValues()">show</button>
+    <br /><br />
+    <label for="search">Value to be Searched: </label>
+    <input type="number" id="search" />
+    <button onclick="showResult()">Click</button>
+    <br /><br />
+    <hr />
+    <p id="output"></p>
+    <script>
+      var arr = [];
+      function addvalues() {
+        var input = document.getElementById("num");
+        if (input.value == "" || input.value == "null")
+          alert("The element cannot be empty or null");
+        else arr.push(input.value);
+        input.value = "";
+      }
+
+      function showValues() {
+        var html = "";
+        for (var i = 0; i < arr.length; i++) {
+          html += "<div>" + arr[i] + "</div>";
+        }
+        // console.log(typeof arr[1]);
+        var container = document.getElementById("output");
+        container.innerHTML = html;
+      }
+
+      const binarySearch = (arr, start, end, num) => {
+        const mid = start + Math.floor((end - start) / 2);
+        if (start <= end) {
+          if (arr[mid] === num) {
+            return mid;
+          }
+          if (num < arr[mid]) {
+            return binarySearch(arr, start, mid - 1, num);
+          }
+          if (num > arr[mid]) {
+            return binarySearch(arr, mid + 1, end, num);
+          }
+        }
+        return -1;
+      };
+      function showResult() {
+        let output = document.getElementById("output");
+        let search = document.getElementById("search");
+        // console.log(search.value);
+        let op = binarySearch(arr, 0, arr.length - 1, search.value);
+        if (op != -1) output.innerHTML = "Found at Position: " + op;
+        else alert("Value not found");
+      }
+    </script>
+  </body>
+</html>
