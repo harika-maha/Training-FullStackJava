@@ -101,3 +101,39 @@ li a:hover {
   font-size: 20px;
   padding: 10px;
 }
+
+.section-3 .line-1 {
+  position: absolute;
+  left: 10%;
+  top: 100%;
+  color: bisque;
+  font-weight: 300;
+}
+
+.section-3 .line-4,
+.line-2,
+.line-3 {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  left: 10%;
+}
+
+.section-3 .line-2 {
+  position: absolute;
+  top: 115%;
+}
+
+.section-3 .line-3 {
+  top: 120%;
+}
+.section-3 .line-4 {
+  top: 125%;
+}
+.section-3 .sub {
+  position: absolute;
+  top: 135%;
+  font-size: 20px;
+  color: white;
+  left: 10%;
+}
