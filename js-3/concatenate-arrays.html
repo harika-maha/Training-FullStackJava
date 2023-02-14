@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays Concatenate</title>
+  </head>
+  <body>
+    <p>CONCATENATING N ARRAYS</p>
+    <br />
+    <hr />
+    <br />
+    <label for="num">Number of Arrays </label>
+    <input type="text" placeholder="number" id="n" />
+    <button onclick="inputArrays()">Input Arrays</button>
+    <br />
+    <p id="output"></p>
+
+    <script>
+      let mainArr = [];
+      function getArrays(i) {
+        // this["arr"+i] = [];
+        // let arr = [];
+        let num = prompt("Elements of Array " + i + "(Space Seperated)");
+        let arr = num.split(" ");
+        mainArr = mainArr.concat(arr);
+        console.log(mainArr);
+      }
+      function inputArrays() {
+        var n = document.getElementById("n").value;
+
+        console.log(n);
+        for (let i = 0; i < n; i++) {
+          getArrays(i);
+        }
+        console.log(mainArr);
+        document.getElementById("output").innerHTML = mainArr;
+      }
+    </script>
+  </body>
+</html>
