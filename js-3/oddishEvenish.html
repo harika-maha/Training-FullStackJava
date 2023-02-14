@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Oddish or Evenish</title>
+  </head>
+  <body>
+    <p>ODDISH OR EVENISH CHECKER</p>
+    <br />
+    <hr />
+    <br />
+    <label for="num">Number to be Checked </label>
+    <input type="number" placeholder="number" id="input" />
+    <button onclick="oddishEvenish()">Check</button>
+    <p id="output"></p>
+    <script>
+      function oddishEvenish() {
+        let num = document.getElementById("input").value;
+        console.log(num);
+        let sum = 0;
+        while (num > 0) {
+          rem = num % 10;
+          num /= 10;
+          sum += rem;
+        }
+        console.log(sum);
+        if (Math.floor(sum) % 2 == 0) {
+          document.getElementById("output").innerHTML = "Evenish";
+        } else {
+          document.getElementById("output").innerHTML = "Oddish";
+        }
+      }
+    </script>
+  </body>
+</html>
