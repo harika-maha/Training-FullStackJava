@@ -5,6 +5,7 @@
 
 body {
   background-color: #4616ad;
+  clear: both;
 }
 
 .section-1 > img {
@@ -79,6 +80,7 @@ li a:hover {
   color: white;
   width: 100px;
   border-radius: 5px;
+  border: 2px solid white;
 }
 
 .container {
@@ -100,6 +102,11 @@ li a:hover {
 .container .heading {
   font-size: 20px;
   padding: 10px;
+}
+
+.section-3 {
+  margin: 0;
+  padding: 0;
 }
 
 .section-3 .line-1 {
