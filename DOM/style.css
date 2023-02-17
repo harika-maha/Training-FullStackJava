@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #4616ad;
+  clear: both;
+}
+
+.section-1 > img {
+  margin-top: 0;
+  border-radius: 0 0 50% 50%;
+  z-index: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.login {
+  position: absolute;
+  left: 90%;
+  margin-top: 15px;
+  padding: 5px;
+  border: 2px solid white;
+  background-color: rgb(0, 0, 0, 0);
+  color: white;
+  border-radius: 30%;
+  width: 70px;
+}
+
+.section-1 p {
+  font-size: 30px;
+  color: white;
+}
+
+.section-1 .line1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+
+.section-1 .line2 {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.section-1 .contact {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  padding: 10px;
+  background-color: rgba(22, 5, 59, 0.7);
+  border: none;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container > div {
+  background-color: rgb(255, 255, 255, 0.2);
+  color: white;
+  width: 300px;
+  height: 250px;
+  margin: 20px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.container .heading {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.section-3 {
+  margin: 0;
+  padding: 0;
+}
+
+.section-3 .line-1 {
+  position: absolute;
+  left: 10%;
+  top: 100%;
+  color: bisque;
+  font-weight: 300;
+}
+
+.section-3 .line-4,
+.line-2,
+.line-3 {
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  left: 10%;
+}
+
+.section-3 .line-2 {
+  position: absolute;
+  top: 115%;
+}
+
+.section-3 .line-3 {
+  top: 120%;
+}
+.section-3 .line-4 {
+  top: 125%;
+}
+.section-3 .sub {
+  position: absolute;
+  top: 135%;
+  font-size: 20px;
+  color: white;
+  left: 10%;
+}

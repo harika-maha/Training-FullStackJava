@@ -1,4 +1,6 @@
 const countries = ["Finland", "Sweden", "Norway"];
+//forEach to console.log all elements of the array
+countries.forEach((country) => console.log(country));
 //create an empty set
 let newset = new Set();
 //set contains 0 to 10
@@ -27,14 +29,17 @@ countriesList = [
 let countriesMap = new Map(countriesList);
 
 let a = [4, 5, 6, 7];
-let b = [3, 9, 0, 8];
+let b = [3, 4, 0, 7];
 
-a = new Set(a);
-b = new Set(b);
-
+set1 = new Set(a);
+set2 = new Set(b);
+set3 = [...set1];
+var newSet = new Set();
 //Union of sets
-let union = new Set(...a, ...b);
-console.log(union);
+set2.forEach((elem) => set1.add(elem));
+console.log(set1);
 //Intersection of sets
-let intersect = new Set([...a].filter((i) => b.has(i)));
-console.log(intersection);
+set2.forEach((elem) => {
+  if (elem in set3) newSet.add(elem);
+});
+console.log(newSet);
