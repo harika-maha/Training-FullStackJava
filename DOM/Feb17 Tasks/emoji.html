@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji</title>
+    <style>
+      #emoji {
+        position: absolute;
+        top: 10%;
+        left: 45%;
+        font-size: 200px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="emoji" onclick="change()">🙈</p>
+    <script type="text/javascript">
+      function change() {
+        var emoji = document.getElementById("emoji");
+        if (emoji.innerHTML == "🙈") {
+          emoji.innerHTML = "🙉";
+        } else {
+          emoji.innerHTML = "🙈";
+        }
+      }
+    </script>
+  </body>
+</html>

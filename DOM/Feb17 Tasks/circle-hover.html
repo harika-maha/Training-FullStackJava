@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle</title>
+    <style>
+      p {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        background-color: rgb(102, 102, 223);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="circle">Hover!</p>
+    <script type="text/javascript">
+      var circle = document.getElementById("circle");
+      circle.addEventListener("mouseenter", () => {
+        circle.style.width = "300px";
+        circle.style.height = "300px";
+      });
+      circle.addEventListener("mouseleave", () => {
+        circle.style.width = "100px";
+        circle.style.height = "100px";
+      });
+    </script>
+  </body>
+</html>
