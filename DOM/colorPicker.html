@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour Generator</title>
+    <style>
+      body {
+        background: black;
+      }
+      .center {
+        width: 300px;
+        height: 300px;
+        border: 2px solid white;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 50%;
+      }
+      .pla {
+        width: 30px;
+        height: 30px;
+        background: rgb(228, 140, 228);
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        overflow: hidden;
+        animation: circle 5s infinite;
+      }
+      @keyframes circle {
+        0% {
+          transform: rotate(0deg) translate(-150px) rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg) translate(-150px) rotate(-360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="pla"></div>
+    </div>
+    <script>
+      const randomHexColor = () => {
+        const part = () =>
+          Math.floor(Math.random() * 256)
+            .toString(16)
+            .padStart(2, "0");
+        const r = part();
+        const g = part();
+        const b = part();
+        return `#${r}${g}${b}`;
+      };
+
+      function inter() {
+        document.getElementsByClassName("pla")[0].style.background =
+          randomHexColor();
+      }
+      setInterval(inter, 5000);
+    </script>
+  </body>
+</html>
