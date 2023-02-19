@@ -43,3 +43,43 @@ set2.forEach((elem) => {
   if (elem in set3) newSet.add(elem);
 });
 console.log(newSet);
+
+//Shape class
+
+class Shape {
+  constructor(color, type = "Shape") {
+    this.color = color;
+    this.type = type;
+  }
+  describe() {
+    console.log(`A ${this.color} ${this.type}`);
+  }
+}
+
+// var shape = new Shape("Transparent");
+// shape.describe();
+
+//Square class
+class Square extends Shape {
+  constructor(color, sideLength) {
+    super(color);
+    this.type = "Square";
+  }
+  area() {
+    return sideLength * sideLength;
+  }
+}
+
+class Rectangle extends Shape {
+  constructor(color, height, width) {
+    super(color);
+    this.type = "Rectangle";
+  }
+  area = () => {
+    return height * width;
+  };
+}
+
+const square = new Square("blue", 5);
+const rectangle = new Rectangle("red", 5, 6);
+for (const shape of [square, rectangle]) shape.describe();
