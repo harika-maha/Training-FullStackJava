@@ -9,7 +9,6 @@ import reportWebVitals from "./reportWebVitals";
 import Price from "./Price";
 import Logo from "./Logo";
 import justDiv from "./justDiv";
-import button from "./button";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,7 +19,6 @@ root.render(
     <App2 />
     <Desc />
     <Price />
-    <button />
   </React.StrictMode>
 );
 
