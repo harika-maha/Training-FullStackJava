@@ -1,0 +1,14 @@
+.logo {
+  top: 0;
+  left: 0;
+  height: 100px;
+}
+
+/* .desc {
+} */
+
+button {
+  padding: 20px;
+  margin-left: 30px;
+  color: black;
+}
