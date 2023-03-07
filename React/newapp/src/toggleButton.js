@@ -13,10 +13,12 @@ const LogicalNot = () => {
       <button
         onClick={() => {
           setToggle(!toggle);
+          alert("popUp activated!");
         }}
       >
         Toggle State
       </button>
+      <button onClick={() => setToggle(!toggle)}>Toggle State</button>
 
       {/* Method 1 */}
 
