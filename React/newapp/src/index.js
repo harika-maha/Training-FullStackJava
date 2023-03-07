@@ -5,13 +5,15 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import HelloClass from "./HelloClass";
 import HelloCounter from "./HelloCounter";
+import LogicalNot from "./toggleButton";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <HelloClass /> */}
-    <HelloCounter />
+    {/* <HelloCounter /> */}
+    <LogicalNot />
   </React.StrictMode>
 );
 
