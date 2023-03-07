@@ -2,28 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import App2 from "./Image";
-import Desc from "./Desc";
-
 import reportWebVitals from "./reportWebVitals";
-import Price from "./Price";
-import Logo from "./Logo";
-import justDiv from "./justDiv";
-import ProductPage from "./Productpage";
-import VideoPlayer from "./VideoPlayer";
+import HelloClass from "./HelloClass";
+import HelloCounter from "./HelloCounter";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {
-      /* <Logo />
-    <App />
-    <justDiv />
-    <App2 />
-    <Desc />
-    <Price />
-    <ProductPage /> */
-      <VideoPlayer />
-    }
+    {/* <App /> */}
+    {/* <HelloClass /> */}
+    <HelloCounter />
   </React.StrictMode>
 );
 
